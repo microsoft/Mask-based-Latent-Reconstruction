@@ -1,14 +1,56 @@
-# Project
+# Mask-based Latent Reconstruction for Reinforcement Learning
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This is the official implementation of *[Masked-based Latent Reconstruction](https://arxiv.org/abs/2201.12096)* (accepted to NeurIPS 2022), which outperforms the state-of-the-art sample-efficient reinforcement learning methods such as [CURL](https://arxiv.org/abs/2004.04136), [DrQ](https://arxiv.org/abs/2004.13649), [SPR](https://openreview.net/forum?id=uCQfPZwRaUu), [PlayVirtual](https://arxiv.org/abs/2106.04152), etc.
 
-As the maintainer of this project, please make a few updates:
+- [arXiv](https://openreview.net/forum?id=GSHFVNejxs7&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2021%2FConference%2FAuthors%23your-submissions))
+- [OpenReview](https://recorder-v3.slideslive.com/#/share?share=49190&s=d537bfb4-ae97-42b4-b4d3-c50f1f607df8)
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Abstract
+For deep reinforcement learning (RL) from pixels, learning effective state representations is crucial for achieving high performance. However, in practice, limited experience and high-dimensional input prevent effective representation learning. To address this, motivated by the success of masked modeling in other research fields, we introduce mask-based reconstruction to promote state representation learning in RL. Specifically, we propose a simple yet effective self-supervised method, Mask-based Latent Reconstruction (MLR), to predict the complete state representations in the latent space from the observations with spatially and temporally masked pixels. MLR enables the better use of context information when learning state representations to make them more informative, which facilitates RL agent training. Extensive experiments show that our MLR significantly improves the sample efficiency in RL and outperforms the state-of-the-art sample-efficient RL methods on multiple continuous and discrete control benchmarks.
+
+## Framework
+
+![image](./figs/framework.png)
+
+Figure 1. The framework of the proposed MLR. We perform a random spatial-temporal masking (i.e., *cube* masking) on the sequence of consecutive observations in the pixel space. The masked observations are encoded to be the latent states through an online encoder. We further introduce a predictive latent decoder to decode/predict the latent states conditioned on the corresponding action sequence and temporal positional embeddings. Our method trains the networks to reconstruct the information available in the missing contents in an appropriate *latent* space using a cosine similarity based distance metric applied between the predicted features of the reconstructed states and the target features inferred from original observations by momentum networks.
+
+  
+## Run MLR
+We provide codes for two benchmarks: Atari and DMControl.
+~~~
+.
+├── Atari
+|   ├── README.md
+|   └── ...
+|── DMControl
+|   ├── README.md
+|   └── ...
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── README.md
+├── SUPPORT.md
+└── SECURITY.md
+~~~
+
+Run Atari code: enter ./Atari for more information.
+~~~
+cd ./Atari
+~~~
+Run DMControl code: enter ./DMControl for more information.
+~~~
+cd ./DMControl
+~~~
+
+## Citation
+Please use the following arXiv citation to cite our work before the NeurIPS 2022 proceeding is ready.  
+  ```
+@article{yu2022mask,
+  title={Mask-based Latent Reconstruction for Reinforcement Learning},
+  author={Yu, Tao and Zhang, Zhizheng and Lan, Cuiling and Chen, Zhibo and Lu, Yan},
+  journal={arXiv preprint arXiv:2201.12096},
+  year={2022}
+}
+  ```
 
 ## Contributing
 

@@ -1,0 +1,21 @@
+torch==1.7.1
+absl-py
+pyparsing
+torchelastic==0.2.1
+torchvision==0.8.2
+wandb==0.10.14
+hydra-core
+termcolor
+mujoco_py
+git+git://github.com/deepmind/dm_control.git
+git+git://github.com/1nadequacy/dmc2gym.git
+tb-nightly
+imageio
+imageio-ffmpeg
+scikit-image
+kornia==0.4.1
+wandb
+tensorboard
+kornia
+# numpy==1.19
+timm
