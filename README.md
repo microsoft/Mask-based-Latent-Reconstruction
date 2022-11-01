@@ -3,7 +3,7 @@
 This is the official implementation of *[Masked-based Latent Reconstruction for Reinforcement Learning](https://arxiv.org/abs/2201.12096)* (accepted by NeurIPS 2022), which outperforms the state-of-the-art sample-efficient reinforcement learning methods such as [CURL](https://arxiv.org/abs/2004.04136), [DrQ](https://arxiv.org/abs/2004.13649), [SPR](https://openreview.net/forum?id=uCQfPZwRaUu), [PlayVirtual](https://arxiv.org/abs/2106.04152), etc.
 
 - [arXiv](https://openreview.net/forum?id=GSHFVNejxs7&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2021%2FConference%2FAuthors%23your-submissions))
-- [OpenReview](https://recorder-v3.slideslive.com/#/share?share=49190&s=d537bfb4-ae97-42b4-b4d3-c50f1f607df8)
+- [OpenReview](https://openreview.net/forum?id=-zlJOVc580)
 - [SlidesLive](https://recorder-v3.slideslive.com/#/share?share=74702&s=2295c61d-8048-439f-a718-54adb5b8b629)
 
 ## Abstract
