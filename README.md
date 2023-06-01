@@ -44,7 +44,7 @@ cd ./DMControl
 
 ## Citation
 Please use the following BibTeX to cite our work.  
-  ```
+```
 @article{yu2022mask,
   title={Mask-based latent reconstruction for reinforcement learning},
   author={Yu, Tao and Zhang, Zhizheng and Lan, Cuiling and Lu, Yan and Chen, Zhibo},
@@ -53,7 +53,7 @@ Please use the following BibTeX to cite our work.
   pages={25117--25131},
   year={2022}
 }
-  ```
+```
 
 ## Contributing
 
