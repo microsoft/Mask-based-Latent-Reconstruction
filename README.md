@@ -43,12 +43,14 @@ cd ./DMControl
 ~~~
 
 ## Citation
-Please use the following arXiv citation to cite our work before the NeurIPS 2022 proceeding is ready.  
+Please use the following BibTeX to cite our work.  
   ```
 @article{yu2022mask,
-  title={Mask-based Latent Reconstruction for Reinforcement Learning},
-  author={Yu, Tao and Zhang, Zhizheng and Lan, Cuiling and Chen, Zhibo and Lu, Yan},
-  journal={arXiv preprint arXiv:2201.12096},
+  title={Mask-based latent reconstruction for reinforcement learning},
+  author={Yu, Tao and Zhang, Zhizheng and Lan, Cuiling and Lu, Yan and Chen, Zhibo},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={25117--25131},
   year={2022}
 }
   ```
